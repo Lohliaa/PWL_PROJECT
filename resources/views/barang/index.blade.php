@@ -25,7 +25,6 @@
         <th>Gambar</th>
         <th>Harga</th>
         <th>Deskripsi</th>
-        <th width="280px">Action</th>
     </tr>
     @foreach ($barang as $Barang)
     <tr>
