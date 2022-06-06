@@ -121,12 +121,12 @@
                 <div class="row">
                   <div class="col-8">
                     <div class="numbers">
-                      <p class="text-sm mb-0 text-uppercase font-weight-bold">Today's Money</p>
+                      <p class="text-sm mb-0 text-uppercase font-weight-bold">Pendapatan Hari Ini</p>
                       <h5 class="font-weight-bolder">
-                        $53,000
+                        Rp 2,400,000
                       </h5>
                       <p class="mb-0">
-                        <span class="text-success text-sm font-weight-bolder">+55%</span>
+                        <span class="text-success text-sm font-weight-bolder">+5%</span>
                         since yesterday
                       </p>
                     </div>
@@ -146,12 +146,12 @@
                 <div class="row">
                   <div class="col-8">
                     <div class="numbers">
-                      <p class="text-sm mb-0 text-uppercase font-weight-bold">Today's Users</p>
+                      <p class="text-sm mb-0 text-uppercase font-weight-bold">Jumlah Pelanggan</p>
                       <h5 class="font-weight-bolder">
-                        2,300
+                        15
                       </h5>
                       <p class="mb-0">
-                        <span class="text-success text-sm font-weight-bolder">+3%</span>
+                        <span class="text-success text-sm font-weight-bolder">+2%</span>
                         since last week
                       </p>
                     </div>
@@ -171,9 +171,9 @@
                 <div class="row">
                   <div class="col-8">
                     <div class="numbers">
-                      <p class="text-sm mb-0 text-uppercase font-weight-bold">New Clients</p>
+                      <p class="text-sm mb-0 text-uppercase font-weight-bold">Pelanggan Baru</p>
                       <h5 class="font-weight-bolder">
-                        +3,462
+                        +3
                       </h5>
                       <p class="mb-0">
                         <span class="text-danger text-sm font-weight-bolder">-2%</span>
@@ -196,12 +196,12 @@
                 <div class="row">
                   <div class="col-8">
                     <div class="numbers">
-                      <p class="text-sm mb-0 text-uppercase font-weight-bold">Sales</p>
+                      <p class="text-sm mb-0 text-uppercase font-weight-bold">Penjualan</p>
                       <h5 class="font-weight-bolder">
-                        $103,430
+                        Rp 5,500,000
                       </h5>
                       <p class="mb-0">
-                        <span class="text-success text-sm font-weight-bolder">+5%</span> than last month
+                        <span class="text-success text-sm font-weight-bolder">+5%</span> than last week
                       </p>
                     </div>
                   </div>
@@ -219,10 +219,10 @@
           <div class="col-lg-7 mb-lg-0 mb-4">
             <div class="card z-index-2 h-100">
               <div class="card-header pb-0 pt-3 bg-transparent">
-                <h6 class="text-capitalize">Sales overview</h6>
+                <h6 class="text-capitalize">Keseluruhan Penjualan</h6>
                 <p class="text-sm mb-0">
                   <i class="fa fa-arrow-up text-success"></i>
-                  <span class="font-weight-bold">4% more</span> in 2021
+                  <span class="font-weight-bold">4% more</span> in 2022
                 </p>
               </div>
               <div class="card-body p-3">
@@ -284,7 +284,7 @@
             <div class="card ">
               <div class="card-header pb-0 p-3">
                 <div class="d-flex justify-content-between">
-                  <h6 class="mb-2">Sales by Country</h6>
+                  <h6 class="mb-2">Penjualan Berdasarkan Kota</h6>
                 </div>
               </div>
               <div class="table-responsive">
@@ -294,30 +294,30 @@
                       <td class="w-30">
                         <div class="d-flex px-2 py-1 align-items-center">
                           <div>
-                            <img src="{{asset('templatedashboard/assets/img/icons/flags/US.png')}}" alt="Country flag">
+                            <img src="{{asset('templatedashboard/assets/img/icons/flags/bullets.png')}}" alt="Country flag">
                           </div>
                           <div class="ms-4">
-                            <p class="text-xs font-weight-bold mb-0">Country:</p>
-                            <h6 class="text-sm mb-0">United States</h6>
+                            <p class="text-xs font-weight-bold mb-0">Kota:</p>
+                            <h6 class="text-sm mb-0">Malang</h6>
                           </div>
                         </div>
                       </td>
                       <td>
                         <div class="text-center">
                           <p class="text-xs font-weight-bold mb-0">Sales:</p>
-                          <h6 class="text-sm mb-0">2500</h6>
+                          <h6 class="text-sm mb-0">18</h6>
                         </div>
                       </td>
                       <td>
                         <div class="text-center">
                           <p class="text-xs font-weight-bold mb-0">Value:</p>
-                          <h6 class="text-sm mb-0">$230,900</h6>
+                          <h6 class="text-sm mb-0">Rp 500,000</h6>
                         </div>
                       </td>
                       <td class="align-middle text-sm">
                         <div class="col text-center">
                           <p class="text-xs font-weight-bold mb-0">Bounce:</p>
-                          <h6 class="text-sm mb-0">29.9%</h6>
+                          <h6 class="text-sm mb-0">40%</h6>
                         </div>
                       </td>
                     </tr>
@@ -325,24 +325,24 @@
                       <td class="w-30">
                         <div class="d-flex px-2 py-1 align-items-center">
                           <div>
-                            <img src="{{asset('templatedashboard/assets/img/icons/flags/DE.png')}}" alt="Country flag">
+                            <img src="{{asset('templatedashboard/assets/img/icons/flags/bullets.png')}}" alt="Country flag">
                           </div>
                           <div class="ms-4">
-                            <p class="text-xs font-weight-bold mb-0">Country:</p>
-                            <h6 class="text-sm mb-0">Germany</h6>
+                            <p class="text-xs font-weight-bold mb-0">Kota:</p>
+                            <h6 class="text-sm mb-0">Mojokerto</h6>
                           </div>
                         </div>
                       </td>
                       <td>
                         <div class="text-center">
                           <p class="text-xs font-weight-bold mb-0">Sales:</p>
-                          <h6 class="text-sm mb-0">3.900</h6>
+                          <h6 class="text-sm mb-0">20</h6>
                         </div>
                       </td>
                       <td>
                         <div class="text-center">
                           <p class="text-xs font-weight-bold mb-0">Value:</p>
-                          <h6 class="text-sm mb-0">$440,000</h6>
+                          <h6 class="text-sm mb-0">Rp 1,500,000</h6>
                         </div>
                       </td>
                       <td class="align-middle text-sm">
@@ -356,24 +356,24 @@
                       <td class="w-30">
                         <div class="d-flex px-2 py-1 align-items-center">
                           <div>
-                            <img src="{{asset('templatedashboard/assets/img/icons/flags/GB.png')}}" alt="Country flag">
+                            <img src="{{asset('templatedashboard/assets/img/icons/flags/bullets.png')}}" alt="Country flag">
                           </div>
                           <div class="ms-4">
-                            <p class="text-xs font-weight-bold mb-0">Country:</p>
-                            <h6 class="text-sm mb-0">Great Britain</h6>
+                            <p class="text-xs font-weight-bold mb-0">Kota:</p>
+                            <h6 class="text-sm mb-0">Surabaya</h6>
                           </div>
                         </div>
                       </td>
                       <td>
                         <div class="text-center">
                           <p class="text-xs font-weight-bold mb-0">Sales:</p>
-                          <h6 class="text-sm mb-0">1.400</h6>
+                          <h6 class="text-sm mb-0">25</h6>
                         </div>
                       </td>
                       <td>
                         <div class="text-center">
                           <p class="text-xs font-weight-bold mb-0">Value:</p>
-                          <h6 class="text-sm mb-0">$190,700</h6>
+                          <h6 class="text-sm mb-0">Rp 3,000,000</h6>
                         </div>
                       </td>
                       <td class="align-middle text-sm">
@@ -387,24 +387,24 @@
                       <td class="w-30">
                         <div class="d-flex px-2 py-1 align-items-center">
                           <div>
-                            <img src="{{asset('templatedashboard/assets/img/icons/flags/BR.png')}}" alt="Country flag">
+                            <img src="{{asset('templatedashboard/assets/img/icons/flags/bullets.png')}}" alt="Country flag">
                           </div>
                           <div class="ms-4">
-                            <p class="text-xs font-weight-bold mb-0">Country:</p>
-                            <h6 class="text-sm mb-0">Brasil</h6>
+                            <p class="text-xs font-weight-bold mb-0">Kota:</p>
+                            <h6 class="text-sm mb-0">Kediri</h6>
                           </div>
                         </div>
                       </td>
                       <td>
                         <div class="text-center">
                           <p class="text-xs font-weight-bold mb-0">Sales:</p>
-                          <h6 class="text-sm mb-0">562</h6>
+                          <h6 class="text-sm mb-0">10</h6>
                         </div>
                       </td>
                       <td>
                         <div class="text-center">
                           <p class="text-xs font-weight-bold mb-0">Value:</p>
-                          <h6 class="text-sm mb-0">$143,960</h6>
+                          <h6 class="text-sm mb-0">Rp 500,000</h6>
                         </div>
                       </td>
                       <td class="align-middle text-sm">
