@@ -17,11 +17,15 @@
     @include('sidebar')
   <main class="main-content position-relative border-radius-lg ">
     <!-- Navbar -->
-
+    
     <!-- End Navbar -->
     @include('navbar')
-  </main>
+    <div class="container-fluid py-4">
     @yield('content')
+    @include('footer')
+    </div> 
+  </main>
+    
   <!--   Core JS Files   -->
   <script src="{{asset('templatedashboard/assets/js/core/popper.min.js')}}"></script>
   <script src="{{asset('templatedashboard/assets/js/core/bootstrap.min.js')}}"></script>

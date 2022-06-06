@@ -1,13 +1,34 @@
-<div class="sidenav-footer mx-3 ">
-    <div class="card card-plain shadow-none" id="sidenavCard">
-      <img class="w-50 mx-auto" src="{{asset('templatedashboard/assets/img/illustrations/icon-documentation.svg')}}" alt="sidebar_illustration">
-      <div class="card-body text-center p-3 w-100 pt-0">
-        <div class="docs-info">
-          <h6 class="mb-0">Need help?</h6>
-          <p class="text-xs font-weight-bold mb-0">Please check our docs</p>
+<footer class="footer pt-3  ">
+  <div class="container-fluid">
+    <div class="row align-items-center justify-content-lg-between">
+      <div class="col-lg-6 mb-lg-0 mb-4">
+        <div class="copyright text-center text-sm text-muted text-lg-start">
+          © <script>
+            document.write(new Date().getFullYear())
+          </script>,
+          made with <i class="fa fa-heart"></i> by
+          <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">Creative Tim</a>
+          for a better web.
         </div>
       </div>
+      <div class="col-lg-6">
+        <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+          <li class="nav-item">
+            <a href="https://www.creative-tim.com" class="nav-link text-muted" target="_blank">Creative Tim</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.creative-tim.com/presentation" class="nav-link text-muted" target="_blank">About
+              Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.creative-tim.com/blog" class="nav-link text-muted" target="_blank">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.creative-tim.com/license" class="nav-link pe-0 text-muted"
+              target="_blank">License</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <a href="https://www.creative-tim.com/learning-lab/bootstrap/license/argon-dashboard" target="_blank" class="btn btn-dark btn-sm w-100 mb-3">Documentation</a>
-    <a class="btn btn-primary btn-sm mb-0 w-100" href="https://www.creative-tim.com/product/argon-dashboard-pro?ref=sidebarfree" type="button">Upgrade to pro</a>
   </div>
+</footer>

@@ -9,9 +9,7 @@
             <a class="btn btn-success" href="{{ route('customer.create') }}"> Input Customer</a>
             </div>
         </div>
-    </div>
-
-    @if ($message = Session::get('success'))
+        @if ($message = Session::get('success'))
         <div class="alert alert-success">
             <p>{{ $message }}</p>
         </div>
@@ -44,4 +42,5 @@
         </tr>
         @endforeach
     </table>
+    </div>
 @endsection

@@ -86,5 +86,4 @@
         </li>
       </ul>
     </div>
-    @include('footer')
   </aside>
