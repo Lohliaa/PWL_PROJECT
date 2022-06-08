@@ -1,4 +1,4 @@
-@extends('barang.layout')
+@extends('master')
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
@@ -9,9 +9,7 @@
             <a class="btn btn-success" href="{{ route('barang.create') }}"> Input Barang</a>
             </div>
         </div>
-    </div>
-
-    @if ($message = Session::get('success'))
+        @if ($message = Session::get('success'))
         <div class="alert alert-success">
             <p>{{ $message }}</p>
         </div>
@@ -19,9 +17,9 @@
 
     <table class="table table-bordered">
         <tr>
-        <th>id</th>
-        <th>Nama_Barang</th>
-        <th>Jenis_Barang</th>
+        <th>ID</th>
+        <th>Nama Barang</th>
+        <th>Jenis Barang</th>
         <th>Gambar</th>
         <th>Harga</th>
         <th>Deskripsi</th>
@@ -32,7 +30,7 @@
     <td>{{ $Barang->id }}</td>
     <td>{{ $Barang->Nama_Barang }}</td>
     <td>{{ $Barang->Jenis_Barang }}</td>
-    <td>{{ $Barang->Gambar }}</td>
+    <td><img height="80" width="160" src="{{asset('images/'.$Barang->gambar)}}"></td>
     <td>{{ $Barang->Harga }}</td>
     <td>
     <form action="{{ route('barang.destroy',$Barang->id) }}" method="POST">
@@ -47,4 +45,13 @@
         </tr>
         @endforeach
     </table>
+    </div>
+{{--  
+    <br><br>
+
+              Halaman : {{ $Barang->currentPage() }} <br>
+              Jumlah Data : {{ $Barang->total() }} <br>
+              Data Per Halaman : {{ $Barang->perPage() }}
+
+              {{ $Barang->links() }}  --}}
 @endsection

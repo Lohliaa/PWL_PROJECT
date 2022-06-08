@@ -7,7 +7,7 @@
     <div class="row justify-content-center align-items-center">
         <div class="card" style="width: 24rem;">
             <div class="card-header">
-            Tambah Barang
+            Tambah Data Barang
             </div>
             <div class="card-body">
                 @if ($errors->any())
@@ -23,7 +23,7 @@
             <form method="post" action="{{ route('barang.store') }}" id="myForm">
             @csrf
                 <div class="form-group">
-                    <label for="id">id</label> 
+                    <label for="id">ID</label> 
                     <input type="text" name="id" class="form-control" id="id" aria-describedby="id" > 
                 </div>
                 <div class="form-group">

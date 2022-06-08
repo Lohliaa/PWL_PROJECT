@@ -17,7 +17,7 @@
 
     <table class="table table-bordered">
         <tr>
-        <th>id</th>
+        <th>ID</th>
         <th>Nama</th>
         <th>Alamat</th>
         <th>Telepon</th>

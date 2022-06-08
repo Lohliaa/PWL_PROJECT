@@ -6,7 +6,6 @@ use App\Models\Barang;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
-use PDF;
 
 class BarangController extends Controller
 {
@@ -17,10 +16,10 @@ class BarangController extends Controller
      */
     public function index(Request $request)
     {
-        $barang = Barang::with('Jenis_Barang')->get();
-        $paginate = Barang::OrderBy('Nama_Barang', 'asc')->paginate(3);
-
-        return view('barang.index', ['barang' => $barang, 'paginate' => $paginate]);
+        $barang = Barang::paginate(5);
+        return view('barang.index')
+        ->with('title','Barang')
+        ->with('barang',$barang);
     }
 
     /**

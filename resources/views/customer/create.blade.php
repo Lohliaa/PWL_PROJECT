@@ -23,7 +23,7 @@
             <form method="post" action="{{ route('customer.store') }}" id="myForm">
             @csrf
                 <div class="form-group">
-                    <label for="id">id</label> 
+                    <label for="id">ID</label> 
                     <input type="text" name="id" class="form-control" id="id" aria-describedby="id" > 
                 </div>
                 <div class="form-group">
@@ -35,7 +35,7 @@
                     <input type="text" name="alamat" class="form-control" id="alamat" aria-describedby="alamat" > 
                 </div>
                 <div class="form-group">
-                    <label for="telepon">telepon</label> 
+                    <label for="telepon">Telepon</label> 
                     <input type="text" name="telepon" class="form-control" id="telepon" aria-describedby="telepon" > 
                 </div>
             <button type="submit" class="btn btn-primary">Submit</button>
