@@ -9,12 +9,12 @@
             </div>
             <div class="card-body">
                 <ul class="list-group list-group-flush">
-                <li class="list-group-item"><b>ID: </b>{{$Barang->id}}</li>
-                <li class="list-group-item"><b>Nama Barang: </b>{{$Barang->Nama_Barang}}</li>
-                <li class="list-group-item"><b>Jenis Barang: </b>{{$Barang->Jenis_Barang}}</li>
-                <li class="list-group-item"><b>Gambar: </b>{{$Barang->Gambar}}</li>
-                <li class="list-group-item"><b>Harga: </b>{{$Barang->Harga}}</li>
-                <li class="list-group-item"><b>Deskripsi: </b>{{$Barang->Deskripsi}}</li>
+                <li class="list-group-item"><b>ID: </b>{{$barang->id}}</li>
+                <li class="list-group-item"><b>Nama Barang: </b>{{$barang->nama_barang}}</li>
+                <li class="list-group-item"><b>Jenis Barang: </b>{{$barang->jenis_barang}}</li>
+                <li class="list-group-item"><b>Gambar: </b>{{$barang->gambar}}</li>
+                <li class="list-group-item"><b>Harga: </b>{{$barang->harga}}</li>
+                <li class="list-group-item"><b>Deskripsi: </b>{{$barang->deskripsi}}</li>
                 </ul>
             </div>
             <a class="btn btn-success mt-3" href="{{ route('barang.index') }}">Kembali</a>

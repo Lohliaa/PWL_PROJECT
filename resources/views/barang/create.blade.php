@@ -27,24 +27,24 @@
                     <input type="text" name="id" class="form-control" id="id" aria-describedby="id" > 
                 </div>
                 <div class="form-group">
-                    <label for="Nama_Barang">Nama Barang</label> 
-                    <input type="Nama_Barang" name="Nama_Barang" class="form-control" id="Nama_Barang" aria-describedby="Nama_Barang" > 
+                    <label for="nama_barang">Nama Barang</label> 
+                    <input type="text" name="nama_barang" class="form-control" id="nama_barang" aria-describedby="nama_barang" > 
                 </div>
                 <div class="form-group">
-                    <label for="Jenis_Barang">Jenis Barang</label>
-                    <input type="Jenis_Barang" name="Jenis_Barang" class="form-control" id="Jenis_Barang" aria-describedby="Jenis_Barang" > 
+                    <label for="jenis_barang">Jenis Barang</label>
+                    <input type="jenis_barang" name="jenis_barang" class="form-control" id="jenis_barang" aria-describedby="jenis_barang" > 
                 </div>
                 <div class="form-group">
-                    <label for="Gambar">Gambar</label> 
-                    <input type="file" name="Gambar" class="form-control" id="Gambar" aria-describedby="Gambar" > 
+                    <label for="gambar">Gambar</label> 
+                    <input type="file" class="form-control" required="required" name="gambar"> 
                 </div>
                 <div class="form-group">
-                <label for="Harga">Harga</label> 
-                <input type="Harga" name="Harga" class="form-control" id="Harga" aria-describedby="Harga" > 
+                <label for="harga">Harga</label> 
+                <input type="harga" name="harga" class="form-control" id="harga" aria-describedby="harga" > 
                 </div>
                 <div class="form-group">
-                    <label for="Deskripsi">Deskripsi</label> 
-                    <input type="Deskripsi" name="Deskripsi" class="form-control" id="Deskripsi" aria-describedby="Deskripsi" > 
+                    <label for="deskripsi">Deskripsi</label> 
+                    <input type="deskripsi" name="deskripsi" class="form-control" id="deskripsi" aria-describedby="deskripsi" > 
                     </div>
             <button type="submit" class="btn btn-primary">Submit</button>
             </form>

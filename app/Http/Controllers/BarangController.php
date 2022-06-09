@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Barang;
+use App\Models\Jenis_Barang;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
@@ -16,10 +17,10 @@ class BarangController extends Controller
      */
     public function index(Request $request)
     {
-        $barang = Barang::paginate(5);
+        $barang = Barang::paginate(3);
         return view('barang.index')
-        ->with('title','Barang')
-        ->with('barang',$barang);
+            ->with('title', 'Barang')
+            ->with('barang', $barang);
     }
 
     /**
@@ -41,18 +42,32 @@ class BarangController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'Nama_Barang' => 'required',
-            'Jenis_Barang' => 'required',
-            'Gambar' => 'required',
-            'Harga' => 'required',
-            'Deskripsi' => 'required',
+            'id' => 'required',
+            'nama_barang' => 'required',
+            'jenis_barang' => 'required',
+            'gambar' => 'required|file|image|mimes:jpeg,png,jpg|max:1024',
+            'harga' => 'required',
+            'deskripsi' => 'required',
         ]);
 
-        Barang::create($request->all());
+        $barang = new Barang;
+        $barang->id = $request->get('id');
+        $barang->nama_barang = $request->get('nama_barang');
+        $barang->jenis_barang = $request->get('jenis_barang');
+        $barang->gambar = $request->file('gambar')->store('images', 'public');
+        $barang->harga = $request->get('harga');
+        $barang->deskripsi = $request->get('deskripsi');
+
+        $jenis_barang = new Jenis_Barang;
+        $jenis_barang->id = $request->get('jenis_barang');
+
+        //fungsi eloquent untuk menambahkan data dengan relasi belongsTo
+        $barang->kelas()->associate($jenis_barang);
+        $barang->save();
 
         //jika data berhasil ditambahkan, akan kembali ke halaman utama
         return redirect()->route('barang.index')
-            -with('success', 'Barang Berhasil Ditambahkan');
+            ->with('success', 'Barang Berhasil Ditambahkan');
     }
 
     /**
@@ -64,8 +79,8 @@ class BarangController extends Controller
     public function show($id)
     {
         //Menampilkan detail data dengan menemukan/berdasarkan ID Barang
-        $Barang = Barang::find($id);
-        return view('barang.detail', compact('Barang'));
+        $barang = Barang::find($id);
+        return view('barang.detail', compact('barang'));
     }
 
     /**
@@ -76,8 +91,8 @@ class BarangController extends Controller
      */
     public function edit($id)
     {
-        $Barang = Barang::find($id);
-        return view('barang.edit', compact('Barang'));
+        $barang = Barang::find($id);
+        return view('barang.edit', compact('barang'));
     }
 
     /**
@@ -92,19 +107,35 @@ class BarangController extends Controller
         //melakukan validasi data
         $request->validate([
             'id' => 'required',
-            'Nama_Barang' => 'required',
-            'Jenis_Barang' => 'required',
-            'Gambar' => 'required',
-            'Harga' => 'required',
-            'Deskripsi' => 'required',
+            'nama_barang' => 'required',
+            'jenis_barang' => 'required',
+            'gambar' => 'required|file|image|mimes:jpeg,png,jpg|max:1024',
+            'harga' => 'required',
+            'deskripsi' => 'required',
         ]);
 
-        //fungsi eloquent untuk mengupdate data inputan kita
-        Barang::find($id)->update($request->all());
+        $barang = Barang::with('jenis_barang')->where('id', $id)->first();
+        $barang->id = $request->get('id');
+        $barang->nama_barang = $request->get('nama_barang');
+        $barang->jenis_barang = $request->get('jenis_barang');
+        if ($barang->gambar && file_exists(storage_path('app/public/' . $barang->gambar))) {
+            \Storage::delete('public/' . $barang->gambar);
+        }
+        $image_name = $request->file('gambar')->store('images', 'public');
+        $barang->gambar = $image_name;
+        $barang->harga = $request->get('harga');
+        $barang->deskripsi = $request->get('deskripsi');
+
+        $jenis_barang = new Jenis_Barang;
+        $jenis_barang->id = $request->get('Jenis_Barang');
+
+        //fungsi eloquent untuk mengupdate data dengan relasi belongsTo
+        $barang->jenis_barang()->associate($jenis_barang);
+        $barang->save();
 
         //jika data berhasil diupdate, akan kembali ke halaman utama
         return redirect()->route('barang.index')
-            -with('success','Barang Berhasil Diupdate');
+            ->with('success', 'Barang Berhasil Diupdate');
     }
 
     /**
