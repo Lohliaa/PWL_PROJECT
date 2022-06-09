@@ -24,7 +24,7 @@
             @csrf
             @method('PUT')
                 <div class="form-group">
-                    <label for="id">ID/label> 
+                    <label for="id">ID</label> 
                     <input type="text" name="id" class="form-control" id="id" value="{{ $Customer->id }}" aria-describedby="id" > 
                 </div>
                 <div class="form-group">

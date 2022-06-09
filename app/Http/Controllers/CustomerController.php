@@ -16,7 +16,7 @@ class CustomerController extends Controller
      */
     public function index(Request $request)
     {
-        $customer = Customer::paginate(5);
+        $customer = Customer::paginate(3);
         return view('customer.index')
         ->with('title','Customer')
         ->with('customer',$customer);
@@ -50,7 +50,7 @@ class CustomerController extends Controller
 
         //jika data berhasil ditambahkan, akan kembali ke halaman utama
         return redirect()->route('customer.index')
-            -with('success', 'Customer Berhasil Ditambahkan');
+            ->with('success', 'Customer Berhasil Ditambahkan');
     }
 
     /**
@@ -100,7 +100,7 @@ class CustomerController extends Controller
 
         //jika data berhasil diupdate, akan kembali ke halaman utama
         return redirect()->route('customer.index')
-            -with('success','Customer Berhasil Diupdate');
+            ->with('success','Customer Berhasil Diupdate');
     }
 
     /**
