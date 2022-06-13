@@ -3,6 +3,7 @@
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\BarangController;
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
@@ -27,5 +28,6 @@ Auth::routes();
 // Route::get('/login', LoginController::class);
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
-Route::resource('/barang', BarangController::class); 
-Route::resource('/customer', CustomerController::class); 
+Route::resource('/barang', BarangController::class);
+Route::resource('/customer', CustomerController::class);
+Route::resource('/pegawai', PegawaiController::class);
