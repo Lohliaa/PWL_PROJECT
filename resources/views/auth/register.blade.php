@@ -129,19 +129,19 @@
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
                     <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                        <input name="username" type="text" class="form-control" placeholder="Username" aria-label="Username">
                       </div>
                     <div class="mb-3">
-                      <input type="text" class="form-control" placeholder="Name" aria-label="Name">
+                      <input name="name" type="text" class="form-control" placeholder="name" aria-label="Name">
                     </div>
                     <div class="mb-3">
-                      <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+                      <input name="email" type="email" class="form-control" placeholder="email" aria-label="Email">
                     </div>
                     <div class="mb-3">
-                      <input type="password" class="form-control" placeholder="Password" aria-label="Password">
+                      <input name="password" type="password" class="form-control" placeholder="Password" aria-label="Password">
                     </div>
                     <div class="mb-3">
-                        <input type="password" class="form-control" placeholder="Confirm Password" aria-label="Confirm Password">
+                        <input name="password_confirmation" type="password" class="form-control" placeholder="Confirm Password" aria-label="Confirm Password">
                       </div>
                     <div class="form-check form-check-info text-start">
                       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>

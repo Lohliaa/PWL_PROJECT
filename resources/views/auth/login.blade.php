@@ -84,7 +84,7 @@
                                         @csrf
                                         <form role="form">
                                             <div class="mb-3">
-                                                <input type="username" class="form-control form-control-lg"
+                                                <input name="username" type="username" class="form-control form-control-lg"
                                                     @error('username') is-invalid @enderror" username="username"
                                                     value="{{ old('username') }}" placeholder="Username"
                                                     aria-label="Username">
@@ -95,7 +95,7 @@
                                                 @enderror
                                             </div>
                                             <div class="mb-3">
-                                                <input type="password" class="form-control form-control-lg" @error('password') is-invalid @enderror" name="password" placeholder="Password" aria-label="Password">
+                                                <input name="password" type="password" class="form-control form-control-lg" @error('password') is-invalid @enderror" name="password" placeholder="Password" aria-label="Password">
                     
                                                     @error('password')
                                                         <span class="invalid-feedback" role="alert">
