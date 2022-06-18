@@ -83,7 +83,7 @@
             </a>
             <a href="">
               <img src="{{ asset('user/images/call.png') }}" alt="">
-              <span>+62 12345678901</span>
+              <span>+6212345678901</span>
             </a>
             <a href="">
               <img src="{{ asset('user/images/envelope.png') }}" alt="">

@@ -240,7 +240,7 @@
         </div>
         <div class="detail-box">
           <h5>
-            Concierge Options
+            Apparel & Riding Gear
           </h5>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -339,7 +339,7 @@
         </div>
         <div class="detail-box">
           <h5>
-            Close And Handy
+            Suku Cadang
           </h5>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -374,7 +374,7 @@
         </div>
         <div class="detail-box">
           <h5>
-            Safe And Secure
+            Oli
           </h5>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -419,137 +419,41 @@
         </div>
         <div class="col-lg-2">
           <h6>
-            Information
-          </h6>
-          <ul>
-            <li>
-              <a href="">
-                There are many
-              </a>
-            </li>
-            <li>
-              <a href="">
-                variations of
-              </a>
-            </li>
-            <li>
-              <a href="">
-                passages of Lorem
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Ipsum available,
-              </a>
-            </li>
-            <li>
-              <a href="">
-                but the majority
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-2">
-          <h6>
-            Helpful Links
-          </h6>
-          <ul>
-            <li>
-              <a href="">
-                There are many
-              </a>
-            </li>
-            <li>
-              <a href="">
-                variations of
-              </a>
-            </li>
-            <li>
-              <a href="">
-                passages of Lorem
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Ipsum available,
-              </a>
-            </li>
-            <li>
-              <a href="">
-                but the majority
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-2">
-          <h6>
-            Invesments
-          </h6>
-          <ul>
-            <li>
-              <a href="">
-                There are many
-              </a>
-            </li>
-            <li>
-              <a href="">
-                variations of
-              </a>
-            </li>
-            <li>
-              <a href="">
-                passages of Lorem
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Ipsum available,
-              </a>
-            </li>
-            <li>
-              <a href="">
-                but the majority
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-2">
-          <h6>
             Contact Us
           </h6>
           <div class="info_link-box">
             <a href="">
-              <img src="images/location.png" alt="">
+              <img src="{{ asset('user/images/location.png') }}" alt="">
               <span> Location</span>
             </a>
             <a href="">
-              <img src="images/call.png" alt="">
-              <span>+01 12345678901</span>
+              <img src="{{ asset('user/images/call.png') }}" alt="">
+              <span>+6212345678901</span>
             </a>
             <a href="">
-              <img src="images/envelope.png" alt="">
-              <span> demo123@gmail.com</span>
+              <img src="{{ asset('user/images/envelope.png') }}" alt="">
+              <span> servicemotor123@gmail.com</span>
             </a>
           </div>
           <div class="info_social">
             <div>
               <a href="">
-                <img src="images/fb.png" alt="">
+                <img src="{{ asset('user/images/fb.png') }}" alt="">
               </a>
             </div>
             <div>
               <a href="">
-                <img src="images/twitter.png" alt="">
+                <img src="{{ asset('user/images/twitter.png') }}" alt="">
               </a>
             </div>
             <div>
               <a href="">
-                <img src="images/linkedin.png" alt="">
+                <img src="{{ asset('user/images/linkedin.png') }}" alt="">
               </a>
             </div>
             <div>
               <a href="">
-                <img src="images/insta.png" alt="">
+                <img src="{{ asset('user/images/insta.png') }}" alt="">
               </a>
             </div>
           </div>

@@ -20,10 +20,7 @@
             </div>
 
             <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in
-              some form, by injected humour, or randomised words which don't look even slightly believable. If you are
-            </p>
+              Sebagai bagian dari bangsa Indonesia, Service Motor senantiasa memperkuat kontribusinya di berbagai bidang, seperti keselamatan berkendara, pendidikan, lingkungan, dan pemberdayaan masyarakat. Diharapkan perusahaan akan terus tumbuh dan berkembang bersama masyarakat dan dapat menjadi salah satu perusahaan kebanggaan bangsa Indonesia.            </p>
             <div>
               <a href="">
                 Read More
@@ -36,34 +33,22 @@
             <div class="row">
               <div class="col-sm-6">
                 <div class="img-box">
-                  <img src="{{ asset('user/images/w-1.jpg') }}" alt="">
-                  <a href="">
-                    <img src="{{ asset('user/images/link.png') }}" alt="">
-                  </a>
+                  <img src="{{ asset('user/images/service.jpg') }}" alt="">
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="img-box">
-                  <img src="{{ asset('user/images/w-2.jpg') }}" alt="">
-                  <a href="">
-                    <img src="{{ asset('user/images/link.png') }}" alt="">
-                  </a>
+                  <img src="{{ asset('user/images/service2.jpg') }}" alt="">
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="img-box">
-                  <img src="{{ asset('user/images/w-3.jpg') }}" alt="">
-                  <a href="">
-                    <img src="{{ asset('user/images/link.png') }}" alt="">
-                  </a>
+                  <img src="{{ asset('user/images/sm.jpg') }}" alt="">
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="img-box">
-                  <img src="{{ asset('user/images/w-4.jpg') }}" alt="">
-                  <a href="">
-                    <img src="{{ asset('user/images/link.png') }}" alt="">
-                  </a>
+                  <img src="{{ asset('user/images/sm2.jpg') }}" alt="">
                 </div>
               </div>
             </div>
@@ -100,102 +85,6 @@
         </div>
         <div class="col-lg-2">
           <h6>
-            Information
-          </h6>
-          <ul>
-            <li>
-              <a href="">
-                There are many
-              </a>
-            </li>
-            <li>
-              <a href="">
-                variations of
-              </a>
-            </li>
-            <li>
-              <a href="">
-                passages of Lorem
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Ipsum available,
-              </a>
-            </li>
-            <li>
-              <a href="">
-                but the majority
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-2">
-          <h6>
-            Helpful Links
-          </h6>
-          <ul>
-            <li>
-              <a href="">
-                There are many
-              </a>
-            </li>
-            <li>
-              <a href="">
-                variations of
-              </a>
-            </li>
-            <li>
-              <a href="">
-                passages of Lorem
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Ipsum available,
-              </a>
-            </li>
-            <li>
-              <a href="">
-                but the majority
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-2">
-          <h6>
-            Invesments
-          </h6>
-          <ul>
-            <li>
-              <a href="">
-                There are many
-              </a>
-            </li>
-            <li>
-              <a href="">
-                variations of
-              </a>
-            </li>
-            <li>
-              <a href="">
-                passages of Lorem
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Ipsum available,
-              </a>
-            </li>
-            <li>
-              <a href="">
-                but the majority
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-2">
-          <h6>
             Contact Us
           </h6>
           <div class="info_link-box">
@@ -205,7 +94,7 @@
             </a>
             <a href="">
               <img src="{{ asset('user/images/call.png') }}" alt="">
-              <span>+62 12345678901</span>
+              <span>+6212345678901</span>
             </a>
             <a href="">
               <img src="{{ asset('user/images/envelope.png') }}" alt="">

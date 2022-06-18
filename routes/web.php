@@ -24,7 +24,7 @@ use App\Http\Controllers\ServiceController;
 |
 */
 
-Route::get('/', function () {
+Route::get('/homeadmin', function () {
     return view('master');
 });
 

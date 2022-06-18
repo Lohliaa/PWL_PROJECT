@@ -86,102 +86,6 @@
         </div>
         <div class="col-lg-2">
           <h6>
-            Information
-          </h6>
-          <ul>
-            <li>
-              <a href="">
-                There are many
-              </a>
-            </li>
-            <li>
-              <a href="">
-                variations of
-              </a>
-            </li>
-            <li>
-              <a href="">
-                passages of Lorem
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Ipsum available,
-              </a>
-            </li>
-            <li>
-              <a href="">
-                but the majority
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-2">
-          <h6>
-            Helpful Links
-          </h6>
-          <ul>
-            <li>
-              <a href="">
-                There are many
-              </a>
-            </li>
-            <li>
-              <a href="">
-                variations of
-              </a>
-            </li>
-            <li>
-              <a href="">
-                passages of Lorem
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Ipsum available,
-              </a>
-            </li>
-            <li>
-              <a href="">
-                but the majority
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-2">
-          <h6>
-            Invesments
-          </h6>
-          <ul>
-            <li>
-              <a href="">
-                There are many
-              </a>
-            </li>
-            <li>
-              <a href="">
-                variations of
-              </a>
-            </li>
-            <li>
-              <a href="">
-                passages of Lorem
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Ipsum available,
-              </a>
-            </li>
-            <li>
-              <a href="">
-                but the majority
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-2">
-          <h6>
             Contact Us
           </h6>
           <div class="info_link-box">
@@ -191,7 +95,7 @@
             </a>
             <a href="">
               <img src="{{ asset('user/images/call.png') }}" alt="">
-              <span>+62 12345678901</span>
+              <span>+6212345678901</span>
             </a>
             <a href="">
               <img src="{{ asset('user/images/envelope.png') }}" alt="">
