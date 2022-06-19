@@ -13,6 +13,13 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\FeatureController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\PesanController;
+use App\Http\Controllers\JenisServiceController;
+use App\Http\Controllers\HistoryController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TransaksiController;
+use App\Models\JenisService;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -43,3 +50,20 @@ Route::get('/contact', [ContactController::class, 'index']);
 Route::get('/about', [AboutController::class, 'index']);
 Route::get('/feature', [FeatureController::class, 'index']);
 Route::get('/service', [ServiceController::class, 'index']);
+
+//
+Route::resource('/jenis_service', JenisServiceController::class);
+Route::resource('/pesan', PesanController::class);
+Route::get('/pesan/{id}', [PesanController::class, 'indexJenisService']);
+Route::post('pesan/{id}', [PesanController::class, 'pesan']);
+Route::get('check-out', [PesanController::class, 'check_out']);
+Route::delete('check-out/{id}', [PesanController::class, 'delete']);
+Route::get('konfirmasi-check-out', [PesanController::class, 'konfirmasi']);
+
+Route::get('history', [HistoryController::class, 'indexhistory']);
+Route::get('history/{id}', [HistoryController::class, 'detail']);
+
+Route::get('profile', [ProfileController::class, 'index']);
+Route::post('profile', [ProfileController::class, 'update']);
+
+Route::resource('admin2', TransaksiController::class);
