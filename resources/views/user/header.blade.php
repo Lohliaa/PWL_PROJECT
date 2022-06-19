@@ -25,6 +25,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="service"> Services </a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pesan"> Jenis Services </a>
+              </li>
 
               <li class="nav-item">
                 <a class="nav-link" href="contact">Contact us</a>

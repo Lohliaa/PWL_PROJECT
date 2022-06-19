@@ -61,7 +61,7 @@
         <div class="col-lg-3">
           <label for="carPark">Select Service</label>
           <select name="" id="carPark" class="form-control">
-            <option value="">Car Wash</option>
+            <option value="">Motor Wash</option>
             <option value="">Apparel & Riding Gear</option>
             <option value="">Suku Cadang</option>
             <option value="">Oli</option>
@@ -307,7 +307,7 @@
       </div>
       <div class="detail-box">
         <h5>
-          Car Wash
+          Motor Wash
         </h5>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
