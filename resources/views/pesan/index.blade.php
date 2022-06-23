@@ -16,7 +16,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-6">
-                                <img src="{{ url('storage') }}/{{ $jenis_service->foto }}" class="rounded mx-auto d-block"
+                                <img src="{{ url('images') }}/{{ $jenis_service->foto }}" class="rounded mx-auto d-block"
                                     width="100%" alt="">
                             </div>
                             <div class="col-md-6 mt-5">
@@ -29,7 +29,7 @@
                                             <td>Rp. {{ number_format($jenis_service->harga_service) }}</td>
                                         </tr>
                                         <tr>
-                                            <td>Jumlah Pesan</td>
+                                            <td>Jumlah Service</td>
                                             <td>:</td>
                                             <td>
                                                 <form method="post" action="{{ url('pesan') }}/{{ $jenis_service->id_jenis_service }}">

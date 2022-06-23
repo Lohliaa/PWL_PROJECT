@@ -34,7 +34,7 @@
     <!-- end header section -->
 
     <!-- slider section -->
-    @yield('user.content')
+    @yield('content')
   <!-- end info section -->
 
   <!-- footer section -->

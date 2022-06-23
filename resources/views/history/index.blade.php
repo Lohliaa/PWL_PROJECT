@@ -26,7 +26,7 @@
                         </thead>
                         <tbody>
                             <?php $no = 1; ?>
-                            @foreach($service as $s)
+                            @foreach($services as $s)
                             <tr>
                                 <td>{{ $no++ }}</td>
                                 <td>{{ $s->tanggal }}</td>

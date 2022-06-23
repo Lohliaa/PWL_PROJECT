@@ -34,10 +34,10 @@
                                         <tr>
                                             <td>{{ $no++ }}</td>
                                             <td>
-                                                <img src="{{ url('storage') }}/{{ $service_detail->jenis_service->foto }}"
+                                                <img src="{{ url('images') }}/{{ $service_detail->jenis_service->foto }}"
                                                     width="100" alt="...">
                                             </td>
-                                            <td>{{ $service_detail->product->kategori }}</td>
+                                            <td>{{ $service_detail->jenis_service->kategori }}</td>
                                             <td>{{ $service_detail->jumlah_service }} </td>
                                             <td>Rp. {{ number_format($service_detail->jenis_service->harga_service) }}</td>
                                             <td>Rp. {{ number_format($service_detail->jumlah_harga) }}</td>
