@@ -88,7 +88,7 @@ class PesanController extends Controller
     public function check_out()
     {
         $service = Service::where('user_id', Auth::user()->id)->where('status',0)->first();
- 	    $service = [];
+ 	    $service_details = [];
         if(!empty($service))
         {
             $service_details = ServiceDetails::where('service_id', $service->id)->get();
