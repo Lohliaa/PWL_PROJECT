@@ -8,7 +8,7 @@
             <nav aria-label="breadcrumb">
             </nav>
         </div>
-            @foreach ($jenis_service as $js)
+            @foreach ($jenis_services as $js)
                     <div class="container">
                         <div class="new-arrivals-content">
                             <br><br><br>
@@ -41,7 +41,7 @@
                     </div>
             @endforeach
             <br><br>
-            {{$jenis_service -> links()}}
+            {{$jenis_services -> links()}}
         </div>
     </div>
 @endsection

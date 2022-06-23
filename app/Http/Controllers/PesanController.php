@@ -151,8 +151,8 @@ class PesanController extends Controller
     public function index(Request $request)
     {
         //fungsi eloquent menampilkan data menggunakan paginaon
-        $jenis_service = JenisService::orderBy('id_jenis_service', 'asc')->paginate(5);
-        return view('order.tampilanawal', compact('jenis_service'));
+        $jenis_services = JenisService::orderBy('id_jenis_service', 'asc')->paginate(5);
+        return view('order.tampilanawal', compact('jenis_services'));
 
     }
     public function create()
