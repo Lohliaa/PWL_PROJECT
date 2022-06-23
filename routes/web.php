@@ -62,7 +62,8 @@ Route::get('konfirmasi-check-out', [PesanController::class, 'konfirmasi']);
 
 Route::get('history', [HistoryController::class, 'indexhistory']);
 Route::get('history/{id}', [HistoryController::class, 'detail']);
-
+Route::get('/history/{id}/cetak_pdf', [HistoryController::class, 'cetak_pdf']);
+Route::get('/history/{id}/cetak_pdf', [HistoryController::class, 'cetak_pdf'])->name('cetak_pdf');
 Route::get('profile', [ProfileController::class, 'index']);
 Route::post('profile', [ProfileController::class, 'update']);
 

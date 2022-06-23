@@ -9,6 +9,7 @@ use App\Models\User;
 use App\Models\ServiceDetails;
 use Illuminate\Support\Facades\Auth;
 use Alert;
+use PDF;
 
 class HistoryController extends Controller
 {
@@ -37,8 +38,7 @@ class HistoryController extends Controller
     return view('history.detail', compact('service','service_details'));
     }
 
-    //////////////////////////////////////Halaman admin//////////////////////////////////////////
-
+    //HALAMAN ADMIN
     public function index(Request $request)
     {
         //fungsi eloquent menampilkan data menggunakan paginaon
@@ -114,5 +114,12 @@ class HistoryController extends Controller
         return redirect()->route('admin2.index')
         -> with('success', 'jenis service Berhasil Dihapus');
 
+    }
+
+    public function cetak_pdf()
+    {
+        $service = ServiceDetails::all();
+        $pdf = PDF::loadview('pesan.pesan_pdf', ['service_details' => $service]);
+        return $pdf->stream();
     }
 }

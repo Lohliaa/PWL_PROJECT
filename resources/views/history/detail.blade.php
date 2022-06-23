@@ -7,7 +7,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="{{ url('home') }}">Home</a></li>
                     <li class="breadcrumb-item"><a href="{{ url('history') }}">Riwayat Service</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Detail Service</li>
+                    <li class="breadcrumb-item active" aria-current="page">Detail Service Motor Customer</li>
                 </ol>
             </nav>
         </div>
@@ -59,11 +59,12 @@
                         </tbody>
                     </table>
                     @endif
-
                 </div>
             </div>
         </div>
         
     </div>
+    <br>
+    <center><a class="btn btn-danger" href="{{ route('cetak_pdf', $service ) }}"> Cetak ke PDF</a></center>
 </div>
 @endsection
