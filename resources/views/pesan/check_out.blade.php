@@ -5,7 +5,7 @@
             <div class="col-md-12 mt-1">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="{{ url('home') }}">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{ url('pesan') }}">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Check Out</li>
                     </ol>
                 </nav>
@@ -38,7 +38,7 @@
                                                     width="100" alt="...">
                                             </td>
                                             <td>{{ $service_detail->jenis_service->kategori }}</td>
-                                            <td>{{ $service_detail->jumlah_service }} </td>
+                                            <td>{{ $service_detail->jumlah }} </td>
                                             <td>Rp. {{ number_format($service_detail->jenis_service->harga_service) }}</td>
                                             <td>Rp. {{ number_format($service_detail->jumlah_harga) }}</td>
                                             <td>

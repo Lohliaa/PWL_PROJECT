@@ -15,7 +15,7 @@
             <div class="card">
                 <div class="card-body">
                     <h3>Sukses Check Out</h3>
-                    <h5>Layanan Service Motor anda sudah sukses dicheck out selanjutnya silakan melakukan pembayaran di tempat dengan nominal sebesar : <strong>Rp. {{ number_format($service->jumlah_harga-$service->kode) }}</strong></h5>
+                    <h5>Layanan Service Motor anda sudah sukses dicheck out selanjutnya silakan melakukan pembayaran di tempat dengan nominal sebesar : <strong>Rp. {{ number_format($service->harga_service-$service->kode) }}</strong></h5>
                 </div>
             </div>
             <div class="card mt-2">
@@ -28,7 +28,7 @@
                             <tr>
                                 <th>No</th>
                                 <th>Gambar</th>
-                                <th>Nama product</th>
+                                <th>Nama Jenis Service</th>
                                 <th>Jumlah</th>
                                 <th>Harga</th>
                                 <th>Total Harga</th>
@@ -45,7 +45,7 @@
                                 </td>
                                 <td>{{ $service_detail->jenis_service->kategori }}</td>
                                 <td>{{ $service_detail->jumlah }} </td>
-                                <td>Rp. {{ number_format($service_detail->jenis_service->harga) }}</td>
+                                <td>Rp. {{ number_format($service_detail->jenis_service->harga_service) }}</td>
                                 <td>Rp. {{ number_format($service_detail->jumlah_harga) }}</td>
                                 
                             </tr>

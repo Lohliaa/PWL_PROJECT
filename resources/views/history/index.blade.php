@@ -5,7 +5,7 @@
         <div class="col-md-12 mt-2">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ url('home') }}">Home</a></li>
+                    <li class="breadcrumb-item"><a href="{{ url('pesan') }}">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Riwayat Service</li>
                 </ol>
             </nav>
@@ -37,7 +37,7 @@
                                     Sudah dibayar 
                                     @endif
                                 </td>
-                                <td>Rp. {{ number_format($s->jumlah_harga) }}</td>
+                                <td>Rp. {{ number_format($s->jumlah_service) }}</td>
                                 <td>
                                     <a href="{{ url('history') }}/{{ $s->id }}" class="btn btn-primary"><i class="fa fa-info"></i> Detail</a>
                                 </td>

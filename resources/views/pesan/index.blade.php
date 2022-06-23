@@ -6,7 +6,7 @@
             <div class="col-md-12 mt-1">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="{{ url('homeuser') }}">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{ url('pesan') }}">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">{{ $jenis_service->kategori }}</li>
                     </ol>
                 </nav>
