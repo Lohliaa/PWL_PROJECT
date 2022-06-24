@@ -35,7 +35,8 @@
                                         </div>
                                         <h4><a href="#">{{ $js->kategori }}</a></h4>
                                         <p class="arrival-jenis_service-price">Rp. {{ $js->harga_service }}</p>                                    </div>
-                                </div>
+                                        
+                                    </div>
                             </div>
                         </div>
                     </div>
