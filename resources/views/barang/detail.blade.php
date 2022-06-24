@@ -12,7 +12,7 @@
                 <li class="list-group-item"><b>ID: </b>{{$barang->id}}</li>
                 <li class="list-group-item"><b>Nama Barang: </b>{{$barang->nama_barang}}</li>
                 <li class="list-group-item"><b>Jenis Barang: </b>{{$barang->jenis_barang}}</li>
-                <li class="list-group-item"><b>Gambar: </b>{{$barang->gambar}}</li>
+                <li class="list-group-item"><b>Gambar: </b><img width="100px" src="{{ asset('storage/' .$barang->gambar)}}">
                 <li class="list-group-item"><b>Harga: </b>{{$barang->harga}}</li>
                 <li class="list-group-item"><b>Deskripsi: </b>{{$barang->deskripsi}}</li>
                 </ul>

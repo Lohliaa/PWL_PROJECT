@@ -20,32 +20,33 @@
                     </ul>
                 </div>
             @endif
-            <form method="post" action="{{ route('barang.update', $Barang->id) }}" id="myForm">
+            <form method="post" action="{{ route('barang.update', $barang->id) }}" id="myForm">
             @csrf
             @method('PUT')
                 <div class="form-group">
                     <label for="id">ID</label> 
-                    <input type="text" name="id" class="form-control" id="id" value="{{ $Barang->id }}" aria-describedby="id" > 
+                    <input type="text" name="id" class="form-control" id="id" value="{{ $barang->id }}" aria-describedby="id" > 
                 </div>
                 <div class="form-group">
                     <label for="nama_barang">Nama Barang</label> 
-                    <input type="text" name="nama_barang" class="form-control" id="nama_barang" value="{{ $Barang->nama_barang }}" aria-describedby="nama_barang" > 
+                    <input type="text" name="nama_barang" class="form-control" id="nama_barang" value="{{ $barang->nama_barang }}" aria-describedby="nama_barang" > 
                 </div>
                 <div class="form-group">
                     <label for="jenis_barang">Jenis Barang</label> 
-                    <input type="jenis_barang" name="jenis_barang" class="form-control" id="jenis_barang" value="{{ $Barang->jenis_barang }}" aria-describedby="jenis_barang" > 
+                    <input type="jenis_barang" name="jenis_barang" class="form-control" id="jenis_barang" value="{{ $barang->jenis_barang }}" aria-describedby="jenis_barang" > 
                 </div>
                 <div class="form-group">
                     <label for="gambar">Gambar</label> 
-                    <input type="file" name="gambar" class="form-control" id="gambar" value="{{ $Barang->gambar }}" aria-describedby="gambar" > 
+                    <input type="file" name="gambar" class="form-control" value="{{ $barang->gambar }}" aria-describedby="gambar" required="required"> 
+                    <img width="100px" src="{{ asset('storage/'.$barang->gambar)}}">
                 </div>
                 <div class="form-group">
                     <label for="harga">Harga</label> 
-                    <input type="harga" name="harga" class="form-control" id="harga" value="{{ $Barang->harga }}" aria-describedby="harga" > 
+                    <input type="harga" name="harga" class="form-control" id="harga" value="{{ $barang->harga }}" aria-describedby="harga" > 
                 </div>
                 <div class="form-group">
                     <label for="deskripsi">Deskripsi</label> 
-                    <input type="deskripsi" name="deskripsi" class="form-control" id="deskripsi" value="{{ $Barang->deskripsi }}" aria-describedby="deskripsi" > 
+                    <input type="deskripsi" name="deskripsi" class="form-control" id="deskripsi" value="{{ $barang->deskripsi }}" aria-describedby="deskripsi" > 
                 </div>
             <button type="submit" class="btn btn-primary">Submit</button>
             </form>
