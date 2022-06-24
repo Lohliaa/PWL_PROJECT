@@ -8,11 +8,11 @@
                 </div>
                 <div class="card-body">
                     <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><b>ID Jenis Service: </b>{{$Jenis_Service->id_jenis_service}}</li>           
-                    <li class="list-group-item"><b>Foto: </b><img width="100px" src="{{ asset('images/' .$Jenis_Service->foto)}}">
-                    <li class="list-group-item"><b>Kategori: </b>{{$Jenis_Service->kategori}}</li>
-                    <li class="list-group-item"><b>Harga Service: </b>{{$Jenis_Service->harga_jual}}</li>
-                    <li class="list-group-item"><b>Deskripsi: </b>{{$Jenis_Service->deskripsi}}</li>
+                    <li class="list-group-item"><b>ID Jenis Service: </b>{{$JenisService->id_jenis_service}}</li>           
+                    <li class="list-group-item"><b>Foto: </b><img width="100px" src="{{ asset('storage/' .$JenisService->foto)}}">
+                    <li class="list-group-item"><b>Kategori: </b>{{$JenisService->kategori}}</li>
+                    <li class="list-group-item"><b>Harga Service: </b>{{$JenisService->harga_jual}}</li>
+                    <li class="list-group-item"><b>Deskripsi: </b>{{$JenisService->deskripsi}}</li>
                     </ul>
                     </div>
             <a class="btn btn-success mt-3" href="{{ route('jenis_service.index') }}">Kembali</a>

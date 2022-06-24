@@ -29,7 +29,7 @@
         <tr>
 
             <td>{{ $js->id_jenis_service }}</td>
-            <td><img width="100px" height="100px" src="{{asset('images/'.$js->foto)}}"></td>       
+            <td><img width="100px" height="100px" src="{{asset('storage/'.$js->foto)}}"></td>       
             <td>{{ $js->kategori }}</td>
             <td>{{ $js->harga_service}}</td>
             <td>{{ $js->deskripsi }}</td>          
