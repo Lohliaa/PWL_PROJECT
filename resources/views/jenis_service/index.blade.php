@@ -1,6 +1,6 @@
 @extends('master')
 @section('content')
-    <div class="row">
+    <div class="row mt-5">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left mt-2">
                 <h2>Data Jenis Service</h2>
@@ -28,10 +28,10 @@
         <tr>
 
             <td>{{ $js->id_jenis_service }}</td>
-            <td><img width="100px" height="100px" src="{{asset('storage/'.$js->foto)}}"></td>       
+            <td><img width="100px" height="100px" src="{{asset('storage/'.$js->foto)}}"></td>
             <td>{{ $js->kategori }}</td>
             <td>{{ $js->harga_service}}</td>
-            <td>{{ $js->deskripsi }}</td>          
+            <td>{{ $js->deskripsi }}</td>
             <td>
             <form action="{{ route('jenis_service.destroy',$js->id_jenis_service ) }}" method="POST">
                 <a class="btn btn-info" href="{{ route('jenis_service.show',$js->id_jenis_service ) }}">Show</a>
@@ -45,5 +45,5 @@
     @endforeach
     </table>
         {{ $jenis_service->links() }}
-        
+
 @endsection

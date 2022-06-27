@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="container">
-    <div class="row">
+    <div class="row mt-5">
         <div class="col-md-12 mt-2">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -34,7 +34,7 @@
                                     @if($s->status == 1)
                                     Sudah Pesan & Belum dibayar
                                     @else
-                                    Sudah dibayar 
+                                    Sudah dibayar
                                     @endif
                                 </td>
                                 <td>Rp. {{ number_format($s->jumlah_service) }}</td>
@@ -48,7 +48,7 @@
                 </div>
             </div>
         </div>
-        
+
     </div>
 </div>
 @endsection

@@ -1,6 +1,6 @@
 @extends('master')
 @section('content')
-    <div class="row">
+    <div class="row mt-5">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left mt-2">
             <h2>Data Pegawai</h2>
