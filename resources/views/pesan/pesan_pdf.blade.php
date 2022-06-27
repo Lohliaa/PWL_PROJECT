@@ -34,9 +34,9 @@
         <tr>
             <td>{{ $no++ }}</td>
             <td>
-                <img src="{{ url('images') }}//{{ $service_detail->jenis_service->foto }}" width="100" alt="...">
+                <img src="{{ url('storage') }}//{{ $service_detail->jenis_service->foto }}" width="100" alt="...">
             </td>
-            {{-- <td>{{ $service_detail->jenis_service->foto }}</td> --}}
+            {{--  <td>{{ $service_detail->jenis_service->foto }}</td>  --}}
             <td align="center">{{ $service_detail->jenis_service->kategori }}</td>
             <td align="center">{{ $service_detail->jumlah }}</td>
             <td align="center">{{ number_format($service_detail->jenis_service->harga_service) }}</td>

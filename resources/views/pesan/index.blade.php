@@ -16,7 +16,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-6">
-                                <img src="{{ url('images') }}/{{ $jenis_service->foto }}" class="rounded mx-auto d-block"
+                                <img src="{{ url('storage') }}/{{ $jenis_service->foto }}" class="rounded mx-auto d-block"
                                     width="100%" alt="">
                             </div>
                             <div class="col-md-6 mt-5">
