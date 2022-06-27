@@ -31,7 +31,11 @@
             <td>{{ $Barang->id }}</td>
             <td>{{ $Barang->nama_barang }}</td>
             <td>{{ $Barang->jenis_barang }}</td>
-            <td><img width="100px" height="100px" src="{{ asset('images/'. $Barang->gambar) }}"></td>
+            <td><img width="100px" height="100px" src="@if ($Barang -> gambar)
+                {{asset('storage/'.$Barang -> gambar)}}
+                @else
+                {{asset('images/'.$Barang -> nama_barang.'.jpg')}}
+            @endif"></td>
             <td>{{ $Barang->harga }}</td>
             <td>{{ $Barang->deskripsi }}</td>
             <td>

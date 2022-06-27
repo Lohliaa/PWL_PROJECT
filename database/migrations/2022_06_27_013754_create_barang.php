@@ -17,7 +17,7 @@ class CreateBarang extends Migration
             $table->id();
             $table->string('nama_barang', 250);
             $table->string('jenis_barang', 250);
-            $table->string('gambar', 50);
+            $table->string('gambar')->nullable();
             $table->string('harga', 50);
             $table->text('deskripsi');
             $table->timestamps();
