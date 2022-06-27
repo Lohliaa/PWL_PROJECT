@@ -2,10 +2,9 @@
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
-            <div class="pull-center mt-2">
-                <Center>DATA JENIS SERVICE</Center>
+            <div class="pull-left mt-2">
+                <h2>Data Jenis Service</h2>
             </div>
-<br>
             <div class="float-right my-2">
                 <a class="btn btn-success" href="{{ route('jenis_service.create') }}"> Input Jenis Service</a>
             </div>
